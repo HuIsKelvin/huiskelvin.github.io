@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> JavaScript-简介 · Kelvin's blog</title><meta name="description" content="JavaScript-简介 - HuIsKelvin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://huiskelvin.github.io/atom.xml" title="Kelvin's blog"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kelvin's blog" type="application/atom+xml">
+</head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/null" target="_self" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/huiskelvin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">JavaScript-简介</h1><div class="post-info">Mar 24, 2019</div><div class="post-content"><h1 id="Javascript-简史"><a href="#Javascript-简史" class="headerlink" title="Javascript 简史"></a>Javascript 简史</h1><p>早期的网页，表单验证必须把表单数据发送到服务器端，才能确定用户是否没有填写某个必填域，是否输入了无效的值。当年的网速很慢，为完成简单的表单验证而频繁地与服务器交换数据，只会加重用户的负担。</p>
+<p>由此诞生了JavaScript，它主要目的是处理以前由服务器端语言（如 Perl）负责的一些输入验证操作。JavaScript的最初名字叫 LiveScript，Netscape 公司为了搭上媒体热炒Java的顺风车，临时把 LiveScript 改名为 JavaScript。</p>
+<h1 id="Javascript-实现"><a href="#Javascript-实现" class="headerlink" title="Javascript 实现"></a>Javascript 实现</h1><p>虽然 JavaScript 和 ECMAScript 通常都被人们用来表达相同的含义，但 JavaScript 的含义却比 ECMA-262 中规定的要多得多。</p>
+<p>一个完整的 Javascript 由以下<strong>三部分组成</strong>：</p>
+<ul>
+<li>核心(ECMAScript)</li>
+<li>文档对象模型(DOM)</li>
+<li>浏览器对象模型(BOM)</li>
+</ul>
+<h2 id="ECMAScript"><a href="#ECMAScript" class="headerlink" title="ECMAScript"></a>ECMAScript</h2><p>由 ECMA-262 定义的ECMAScript与 Web浏览器没有依赖关系。ECMA-262 定义的只是这门语言的基础，而在此基础之上可以构建更完善的脚本语言。我们常见的 Web 浏览器只是 ECMAScript 实现可能的<strong>宿主环境之一</strong>，其他宿主环境包括 Node（一种服务端 JavaScript平台）和 Adobe Flash。</p>
+<p>宿主环境不仅提供基本的 ECMAScript 实现，同时也会提供该语言的扩展，以便语言与环境之间对接交互。而这些扩展——如 DOM，则利用 ECMAScript的核心类型和语法提供更多更具体的功能，以便实现针对环境的操作。</p>
+<p>ECMA-262 标准规定了这门语言的下列组成部分：</p>
+<ul>
+<li>语法 </li>
+<li>类型 </li>
+<li>语句 </li>
+<li>关键字 </li>
+<li>保留字 </li>
+<li>操作符 </li>
+<li>对象</li>
+</ul>
+<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><p>文档对象模型（DOM，Document Object Model）DOM把整个页面映射为一个多层节点结构。HTML 或 XML 页面中的每个组成部分都是某种类型的节点，这些节点又包含着不同类型的数据。</p>
+<p>通过 DOM 创建的这个表示文档的树形图，开发人员获得了控制页面内容和结构的主动权。借助 DOM 提供的 API，开发人员可以轻松自如地删除、添加、替换或修改任何节点。</p>
+<p>一个简单的 HTML 页面</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Sample Page<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>该 HTML 页面对应的 DOM 树：<br><img src="https://s2.ax1x.com/2019/02/16/krjmFI.jpg" alt="DOM 树"></p>
+<blockquote>
+<p>DOM并不只是针对 JavaScript的，很多别的语言也都实现了DOM。<br>不过，在 Web 浏览器中，基于 ECMAScript 实现的 DOM 的确已经成为 JavaScript 这 门语言的一个重要组成部分。</p>
+</blockquote>
+<h2 id="BOM"><a href="#BOM" class="headerlink" title="BOM"></a>BOM</h2><p>开发人员使用BOM（BOM，Browser Object Model）可以控制浏览器显示的页面以外的部分。</p>
+<p>而BOM真正与众不同的地方（也是经常会导致问题的地方），还是它作为 JavaScript 实现的一部分但却没有相关的标准。这个问题在 HTML5 中得到了解决，HTML5 致力于把很多 BOM 功能写入正式规范。有了 HTML5，BOM 实现的细节有望朝着兼容性越来越高的方向发展。</p>
+<p>从根本上讲，BOM只处理浏览器窗口和框架；但人们习惯上也把所有针对浏览器的 JavaScript 扩展算作 BOM 的一部分。下面就是一些这样的扩展： </p>
+<ul>
+<li>弹出新浏览器窗口的功能</li>
+<li>移动、缩放和关闭浏览器窗口的功能</li>
+<li>提供浏览器详细信息的 navigator 对象</li>
+<li>提供浏览器所加载页面的详细信息的 location 对象</li>
+<li>提供用户显示器分辨率详细信息的 screen 对象</li>
+<li>对 cookies 的支持</li>
+<li>像 XMLHttpRequest 和 IE 的 ActiveXObject 这样的自定义对象。</li>
+</ul>
+<hr/>
+
+<p>参考资料：</p>
+<ul>
+<li>《JavaScript 高级程序设计》</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2019/03/30/hover-item-show-another-item/" class="prev">PREV</a><a href="/2019/03/08/problems-in-using-Vue/" class="next">NEXT</a></div><div class="copyright"><p>© 2015 - 2021 <a href="https://huiskelvin.github.io">HuIsKelvin</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

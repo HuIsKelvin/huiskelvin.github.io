@@ -1,0 +1,353 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 数据库—概述 · Kelvin's blog</title><meta name="description" content="数据库—概述 - HuIsKelvin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://huiskelvin.github.io/atom.xml" title="Kelvin's blog"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kelvin's blog" type="application/atom+xml">
+</head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/null" target="_self" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/huiskelvin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">数据库—概述</h1><div class="post-info">Jan 13, 2019</div><div class="post-content"><h1 id="数据库系统概述"><a href="#数据库系统概述" class="headerlink" title="数据库系统概述"></a>数据库系统概述</h1><h2 id="数据库4个基本概念"><a href="#数据库4个基本概念" class="headerlink" title="数据库4个基本概念"></a>数据库4个基本概念</h2><ul>
+<li>数据</li>
+<li>数据库</li>
+<li>数据库管理系统</li>
+<li>数据库系统</li>
+</ul>
+<h3 id="数据（data）"><a href="#数据（data）" class="headerlink" title="数据（data）"></a>数据（data）</h3><p>数据（data）是数据库中存储的基本对象。<br>定义：描述事物的符号记录。<br>种类：数字、文字、图形、图像、音频、视频、学生的档案记录、订单情况等等。<br>数据的含义称为数据的语义， 数据与其语义是不可分的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">例如 93是一个数据</span><br><span class="line">语义1：学生某门课的成绩</span><br><span class="line">语义2：某人的体重</span><br><span class="line">语义3：计算机系2014级学生人数</span><br></pre></td></tr></table></figure>
+<h3 id="数据库（DB）"><a href="#数据库（DB）" class="headerlink" title="数据库（DB）"></a>数据库（DB）</h3><p>数据库（Database，DB）：是长期储存在计算机内、 有组织的、 可共享的大量数据的集合。</p>
+<p>为什么要建立数据库？<br>收集并抽取出一个应用所需要的大量数据， 将其保存， 以供进一步加工处理，抽取有用信息， 转换为有价值的知识。</p>
+<p>数据库的基本特征：</p>
+<ul>
+<li>数据按一定的数据模型组织、 描述和储存</li>
+<li>可为各种用户共享、冗余度较小、易扩展</li>
+<li>数据独立性较高</li>
+</ul>
+<h3 id="数据库管理系统（DBMS）"><a href="#数据库管理系统（DBMS）" class="headerlink" title="数据库管理系统（DBMS）"></a>数据库管理系统（DBMS）</h3><p>什么是数据库管理系统（DBMS）：</p>
+<ul>
+<li>位于用户应用与操作系统之间的一层数据管理软件。</li>
+<li>是基础软件，是一个大型复杂的软件系统。</li>
+</ul>
+<p>数据库管理系统的用途：<br>科学地组织和存储数据、 高效地获取和维护数据</p>
+<p>主要功能：</p>
+<ul>
+<li>数据定义功能</li>
+<li>数据组织、存储和管理</li>
+<li>数据操纵功能</li>
+<li>数据库的事务管理和运行管理</li>
+<li>数据库的建立和维护功能</li>
+</ul>
+<h3 id="数据库系统（DBS）"><a href="#数据库系统（DBS）" class="headerlink" title="数据库系统（DBS）"></a>数据库系统（DBS）</h3><p>数据库系统（Database System， 简称DBS）</p>
+<ul>
+<li>是指在计算机系统中引入数据库后的系统构成。</li>
+<li>在不引起混淆的情况下常常把数据库系统简称为数据库。</li>
+</ul>
+<p>数据库系统的构成</p>
+<ul>
+<li>数据库</li>
+<li>数据库管理系统（及其应用开发工具）</li>
+<li>应用程序</li>
+<li>数据库管理员（DataBase Administrator， DBA）</li>
+</ul>
+<h2 id="数据库系统的特点"><a href="#数据库系统的特点" class="headerlink" title="数据库系统的特点"></a>数据库系统的特点</h2><ul>
+<li>数据结构化</li>
+<li>数据的共享性高，冗余度低且易扩充</li>
+<li>数据独立性高</li>
+<li>数据由数据库管理系统统一管理和控制</li>
+</ul>
+<h3 id="数据结构化"><a href="#数据结构化" class="headerlink" title="数据结构化"></a>数据结构化</h3><p><strong>数据的整体结构化</strong>是数据库的主要特征之一：</p>
+<ul>
+<li>不再仅仅针对某一个应用，而是面向整个企业或组织</li>
+<li>不仅数据内部结构化，整体是结构化的，数据之间具有联系</li>
+<li>数据记录可以变长</li>
+<li>数据的最小存取单位是数据项</li>
+</ul>
+<p> 数据用<strong>数据模型</strong>描述， 无需应用程序定义。</p>
+<h3 id="数据的共享性高，冗余度低且易扩充"><a href="#数据的共享性高，冗余度低且易扩充" class="headerlink" title="数据的共享性高，冗余度低且易扩充"></a>数据的共享性高，冗余度低且易扩充</h3><p>数据面向整个系统，可以被多个用户、多个应用共享使用。<br>数据共享的好处：</p>
+<ul>
+<li>减少数据冗余，节约存储空间</li>
+<li>避免数据之间的不相容性与不一致性</li>
+<li>使系统易于扩充</li>
+</ul>
+<h3 id="数据独立性高"><a href="#数据独立性高" class="headerlink" title="数据独立性高"></a>数据独立性高</h3><ul>
+<li>物理独立性<br>指用户的应用程序与数据库中数据的物理存储是相互独立的。当数据的物理存储改变了，应用程序不用改变。</li>
+<li>逻辑独立性<br>指用户的应用程序与数据库的逻辑结构是相互独立的。数据的逻辑结构改变了，应用程序不用改变。</li>
+</ul>
+<p>数据独立性由数据库管理系统的二级映像功能来保证。</p>
+<h3 id="数据由数据库管理系统统一管理和控制"><a href="#数据由数据库管理系统统一管理和控制" class="headerlink" title="数据由数据库管理系统统一管理和控制"></a>数据由数据库管理系统统一管理和控制</h3><p>数据库管理系统提供的数据控制功能：</p>
+<ul>
+<li>数据的安全性（Security） 保护<br>保护数据以防止不合法的使用造成的数据的泄密和破坏。</li>
+<li>数据的完整性（Integrity） 检查<br>保证数据的正确性、 有效性和相容性。</li>
+<li>并发控制（Concurrency Control）<br>对多用户的并发操作加以控制和协调， 防止相互干扰而得到错误的结果。</li>
+<li>数据库恢复（Recovery）<br>将数据库从错误状态恢复到某一已知的正确状态。</li>
+</ul>
+<h2 id="数据库用户"><a href="#数据库用户" class="headerlink" title="数据库用户"></a>数据库用户</h2><h3 id="最终用户"><a href="#最终用户" class="headerlink" title="最终用户"></a>最终用户</h3><p>交互式用户</p>
+<h3 id="临时用户"><a href="#临时用户" class="headerlink" title="临时用户"></a>临时用户</h3><p>用SQL访问DBMS的用户。<br>交互式查询，也叫即席查询，是实现一些迫切需求时配制的查询。</p>
+<h3 id="初级用户"><a href="#初级用户" class="headerlink" title="初级用户"></a>初级用户</h3><p>通过菜单访问的用户，而不必编写SQL语句。</p>
+<h3 id="应用程序员"><a href="#应用程序员" class="headerlink" title="应用程序员"></a>应用程序员</h3><p>编写菜单程序的程序员</p>
+<h3 id="数据库管理员（DBA）"><a href="#数据库管理员（DBA）" class="headerlink" title="数据库管理员（DBA）"></a>数据库管理员（DBA）</h3><p>管理DBMS的专家</p>
+<hr>
+<h1 id="数据库系统的结构"><a href="#数据库系统的结构" class="headerlink" title="数据库系统的结构"></a>数据库系统的结构</h1><p>从数据库应用开发人员角度看，数据库系统采用<strong>三级模式</strong>结构，是数据库系统内部的系统结构。<br><a target="_blank" rel="noopener" href="https://imgse.com/i/5dtRUH"><img src="https://s1.ax2x.com/2019/01/13/5dtRUH.png" alt="5dtRUH.png"></a></p>
+<h2 id="三级模式结构"><a href="#三级模式结构" class="headerlink" title="三级模式结构"></a>三级模式结构</h2><ul>
+<li>模式 Schema</li>
+<li>外模式 External Schema</li>
+<li>内模式 Internal Schema</li>
+</ul>
+<h3 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h3><p>也叫逻辑模式。是数据库中全体数据的逻辑结构和特征的描述。<br>所有用户的公共数据视图。</p>
+<p>一般， 某个应用的数据库有一个模式。<br>模式是数据库系统模式结构的中心。</p>
+<p>定义模式</p>
+<ul>
+<li>DDL定义数据的逻辑结构，以某种数据模型为基础<br>数据记录由哪些数据项构成，数据项的名字、类型、取值范围等</li>
+<li>定义数据之间的联系</li>
+<li>定义与数据有关的安全性、完整性要求</li>
+</ul>
+<h3 id="外模式"><a href="#外模式" class="headerlink" title="外模式"></a>外模式</h3><p>是数据库用户使用的<strong>局部</strong>数据的逻辑结构和特征的描述。<br>数据库用户的数据视图，是与某一应用有关的数据的逻辑表示。</p>
+<p>外模式与模式的关系</p>
+<ul>
+<li>外模式通常是模式的子集、 一个模式可以有多个外模式反映了不同的用户的应用需求、 看待数据的方式、 对数据保密的要求</li>
+<li>对模式中某一数据， 在不同的外模式中 结构、 类型、 长度、 保密级别等都可以不同<br>外模式与应用的关系</li>
+<li>一个外模式可以为<strong>多个</strong>应用系统所使用， 一个应用程序只能使用一个外模式<br>外模式的用途</li>
+<li>每个用户只能看见和访问所对应的外模式中的数据， 简化用户视图</li>
+<li>保证数据库安全性的一个有力措施</li>
+</ul>
+<h3 id="内模式"><a href="#内模式" class="headerlink" title="内模式"></a>内模式</h3><p>也称存储模式</p>
+<ul>
+<li>是数据物理结构和存储方式的描述</li>
+<li>是数据在数据库内部的表示方式<ul>
+<li>记录的存储方式<br>（例如， 顺序存储， 堆存储， Cluste按hash方法存储等）</li>
+<li>索引的组织方式（B+树， Bitmap， Hash）</li>
+<li>数据是否压缩存储</li>
+<li>数据是否加密</li>
+<li>数据存储记录结构的规定—如定长/变长， 记录是否可以跨页存放等</li>
+</ul>
+</li>
+</ul>
+<p>一个数据库只有<strong>一个内模式</strong>。</p>
+<h2 id="数据库的二级映像（mapping）功能与数据独立性"><a href="#数据库的二级映像（mapping）功能与数据独立性" class="headerlink" title="数据库的二级映像（mapping）功能与数据独立性"></a>数据库的二级映像（mapping）功能与数据独立性</h2><p>数据库管理系统内部提供二级映像：</p>
+<ul>
+<li>外模式／模式映像</li>
+<li>模式／内模式映像</li>
+</ul>
+<h3 id="外模式／模式映像"><a href="#外模式／模式映像" class="headerlink" title="外模式／模式映像"></a>外模式／模式映像</h3><p>对每一个外模式，有一个外模式／模式映像。<br>定义外模式与模式之间的对应关系。映像定义通常包含在各外模式的描述中。</p>
+<p><strong>保证数据的逻辑独立性</strong></p>
+<ul>
+<li>当模式改变时，数据库管理员对外模式／模式映像作相应改变，使<strong>外模式保持不变</strong>。</li>
+<li>应用程序是依据数据的外模式编写的， 应用程序不必修改，保证了数据与程序的逻辑独立性，简称数据的<strong>逻辑独立性</strong></li>
+</ul>
+<h3 id="模式／内模式映像"><a href="#模式／内模式映像" class="headerlink" title="模式／内模式映像"></a>模式／内模式映像</h3><p>定义了数据全局逻辑结构与存储结构之间的对应关系。如，说明某个逻辑记录对应何种存储结构。</p>
+<p>数据库中模式／内模式映象是<strong>唯一</strong>的。该映象定义通常包含在模式描述中。</p>
+<p><strong>保证数据的物理独立性</strong></p>
+<ul>
+<li>当数据库的存储结构改变了（例如选用了另一种存储结构），数据库管理员修改模式／内模式映象，使模式保持不变。</li>
+<li>模式不变，则应用程序不变。保证了数据与程序的物理独立性， 简称数据的<strong>物理独立性</strong></li>
+</ul>
+<p>数据库的二级映像功能的作用：</p>
+<ul>
+<li>保证了应用程序的稳定性<br>除非应用需求本身发生变化，否则应用程序一般不需要修改。</li>
+<li>从程序为中心——发展为<strong>以数据为中心</strong><br>具有了数据与程序之间的独立性，使得数据的定义和描述可以从应用程序中分离出去。</li>
+<li>数据的存取由数据库管理系统管理<br>简化了应用程序的编制。大大减少了应用程序的维护和修改。</li>
+</ul>
+<hr>
+<h1 id="数据库系统的组成"><a href="#数据库系统的组成" class="headerlink" title="数据库系统的组成"></a>数据库系统的组成</h1><p>从<strong>不同于前面4个概念的角度</strong>来说</p>
+<ul>
+<li>硬件平台及数据库</li>
+<li>软件</li>
+<li>人员</li>
+</ul>
+<h2 id="硬件平台及数据库"><a href="#硬件平台及数据库" class="headerlink" title="硬件平台及数据库"></a>硬件平台及数据库</h2><p>数据库系统对硬件资源的要求：</p>
+<ul>
+<li>足够大的内存；</li>
+<li>足够的大的磁盘或磁盘阵列等外部设备；</li>
+<li>较高的通道能力，提高数据传送率。</li>
+</ul>
+<h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><ul>
+<li><strong>数据库管理系统</strong></li>
+<li>支持数据库管理系统运行的操作系统</li>
+<li>与数据库接口的高级语言及其编译系统</li>
+<li>以数据库管理系统为核心的<strong>应用开发工具</strong></li>
+<li>为特定应用环境开发的<strong>数据库应用系统</strong></li>
+</ul>
+<h2 id="人员"><a href="#人员" class="headerlink" title="人员"></a>人员</h2><ul>
+<li>数据库管理员（DBA）</li>
+<li>系统分析员和数据库设计人员</li>
+<li>应用程序员</li>
+<li>最终用户</li>
+</ul>
+<h3 id="数据库管理员（DBA）-1"><a href="#数据库管理员（DBA）-1" class="headerlink" title="数据库管理员（DBA）"></a>数据库管理员（DBA）</h3><ul>
+<li>参与确定数据库中的信息内容和结构</li>
+<li>参与数据库的存储结构和存取策略的设计</li>
+<li>参与确定数据安全性要求和完整性约束条件</li>
+<li>监控数据库的使用和运行</li>
+<li>数据库的改进和重组</li>
+</ul>
+<h3 id="系统分析员和数据库设计人员"><a href="#系统分析员和数据库设计人员" class="headerlink" title="系统分析员和数据库设计人员"></a>系统分析员和数据库设计人员</h3><p>系统分析员</p>
+<ul>
+<li>负责应用系统的需求分析和规范说明</li>
+<li>与用户及数据库管理员结合，确定系统的硬软件配置</li>
+<li>参与数据库系统的概要设计</li>
+</ul>
+<p>数据库设计人员</p>
+<ul>
+<li>参加用户需求调查和系统分析</li>
+<li>确定数据库中的数据</li>
+<li>设计数据库各级模式</li>
+</ul>
+<h3 id="应用程序员-1"><a href="#应用程序员-1" class="headerlink" title="应用程序员"></a>应用程序员</h3><ul>
+<li>设计和编写应用系统的程序模块</li>
+<li>进行调试和安装</li>
+</ul>
+<h3 id="最终用户-1"><a href="#最终用户-1" class="headerlink" title="最终用户"></a>最终用户</h3><p>用户是指最终用户（End User）。他们通过应用系统的用户接口使用数据库。</p>
+<ol>
+<li>偶然用户<ul>
+<li>不经常访问数据库， 但每次访问数据库时往往需要不同的数据库信息</li>
+<li>企业或组织机构的高中级管理人员</li>
+</ul>
+</li>
+<li>简单用户<ul>
+<li>主要工作是查询和更新数据库</li>
+<li>银行的职员、 机票预定人员、 旅馆总台服务员</li>
+</ul>
+</li>
+<li>复杂用户<ul>
+<li>工程师、 科学家、 经济学家、 科技工作者等</li>
+<li>直接使用数据库语言访问数据库， 甚至能够基于数据库管理系统的应用程序接口编制自己的应用程序</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h1 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h1><p>数据模型是对现实世界数据特征的抽象。通俗地讲数据模型就是现实世界的模拟。<br>数据模型是数据库系统的核心和基础。</p>
+<h2 id="两大类数据模型"><a href="#两大类数据模型" class="headerlink" title="两大类数据模型"></a>两大类数据模型</h2><p>数据模型分为两类（两个不同的层次）</p>
+<ul>
+<li><strong>概念模型</strong>，也称信息模型<br>它是按用户的观点来对数据和信息建模，用于数据库设计。</li>
+<li><strong>逻辑模型和物理模型</strong></li>
+<li><ul>
+<li>逻辑模型主要包括网状模型、层次模型、关系模型、面向对象数据模型、对象关系数据模型、半结构化数据模型等。<br>按计算机系统的观点对数据建模， 用于DBMS实现。</li>
+</ul>
+</li>
+<li><ul>
+<li>物理模型是对数据最底层的抽象<br>描述数据在系统内（磁盘上）的表示方式和存取方法。</li>
+</ul>
+</li>
+</ul>
+<h2 id="信息世界中的基本概念"><a href="#信息世界中的基本概念" class="headerlink" title="信息世界中的基本概念"></a>信息世界中的基本概念</h2><ul>
+<li>实体（Entity）<br>客观存在并可相互区别的事物称为实体。<br>可以是具体的人、 事、 物或抽象的概念。</li>
+<li>属性（Attribute）<br>实体所具有的某一特性称为属性。 一个实体可以由若干个属性来刻画。</li>
+<li>码（Key）<br>唯一标识实体的属性集称为码。</li>
+<li>实体型（Entity Type）<br>用实体名及其属性名集合来抽象和刻画同类实体称为实体型。</li>
+<li>实体集（Entity Set）<br>同一类型实体的集合称为实体集。</li>
+<li>联系（Relationship）<br>现实世界中事物内部以及事物之间的联系在信息世界中反映为实体（型）内部的联系和实体（型） 之间的联系。</li>
+</ul>
+<p>实体内部的联系: 是指组成实体的各属性之间的联系。<br>实体之间的联系: 通常是指不同实体集之间的联系。<br>实体之间的联系有<strong>一对一（1:1） 、 一对多（1:n） 和多对多（m:n）</strong>等多种类型。</p>
+<p>概念模型的一种表示方法：实体-联系方法（Entity-Relationship Approach）。也称为<strong>E-R模型</strong>。</p>
+<h2 id="数据模型的组成要素"><a href="#数据模型的组成要素" class="headerlink" title="数据模型的组成要素"></a>数据模型的组成要素</h2><p>数据模型是严格定义的一组概念的集合，精确地描述了系统的静态特性、动态特性和完整性约束条件(Integrity Constraints)。</p>
+<p>数据模型由三部分组成：</p>
+<ul>
+<li>数据结构——描述系统的静态特性</li>
+<li>数据操作——描述系统的动态特性</li>
+<li>完整性约束</li>
+</ul>
+<h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><ul>
+<li>刻画数据模型性质的重要方面。<br>根据数据结构的类型来命名数据模型，层次结构-层次模型、 网状结构–网状模型、 关系结构—关系模型。</li>
+<li>描述数据库的组成对象–对象的类型、 内容、 性质。</li>
+<li>描述对象之间的联系。</li>
+</ul>
+<h3 id="数据操作"><a href="#数据操作" class="headerlink" title="数据操作"></a>数据操作</h3><p>对数据库中各种对象的实例允许执行的操作的集合，包括操作及有关的操作规则。</p>
+<p>数据操作的类型：</p>
+<ul>
+<li>查询</li>
+<li>更新（插入、删除、修改）</li>
+</ul>
+<h3 id="数据的完整性约束"><a href="#数据的完整性约束" class="headerlink" title="数据的完整性约束"></a>数据的完整性约束</h3><p>是一组完整性规则的集合：</p>
+<ul>
+<li>完整性规则：给定的数据模型中数据及其联系所具有的<strong>制约和依存规则</strong>。</li>
+<li>用以限定符合数据模型的数据库状态以及状态的变化，以保证数据的<strong>正确、有效和相容</strong>。</li>
+</ul>
+<p>数据模型对完整性约束条件的定义：</p>
+<ul>
+<li>反映和规定必须遵守的<strong>基本的通用的</strong>完整性约束条件。</li>
+<li>提供定义完整性约束条件的机制，以反映<strong>具体应用</strong>所涉及的数据必须遵守的<strong>特定的语义约束条件</strong>。（如课程数据库中成绩score不能超过100）</li>
+</ul>
+<h2 id="常用的数据模型"><a href="#常用的数据模型" class="headerlink" title="常用的数据模型"></a>常用的数据模型</h2><ul>
+<li>层次模型（Hierarchical Model）</li>
+<li>网状模型（Network Model）</li>
+<li>关系模型（Relational Model)）</li>
+<li>面向对象数据模型（Object Oriented Data Model）</li>
+<li>对象关系数据模型（Object Relational Data Model）</li>
+<li>半结构化数据模型（Semi-struture Data Model）—如XML</li>
+<li>非结构化数据模型、图模型……</li>
+</ul>
+<h2 id="层次模型"><a href="#层次模型" class="headerlink" title="层次模型"></a>层次模型</h2><p>用树形结构来表示各类实体以及实体间的联系。</p>
+<p>表示方法：</p>
+<ul>
+<li>实体型：用记录类型描述<br>每个结点表示一个记录类型（实体）</li>
+<li>属性：用字段描述<br>每个记录类型可包含若干个字段</li>
+<li>联系：用结点之间的连线表示记录类型（实体）之间的一对多的父子联系。<br>层次模型的定义：满足以下条件的基本层次结构的集合，</li>
+<li>有且只有一个结点没有双亲结点， 这个结点称为根结点。</li>
+<li>根以外的其它结点有且只有一个双亲结点。</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/5dtggN"><img src="https://s1.ax2x.com/2019/01/13/5dtggN.jpg" alt="5dtggN.jpg"></a></p>
+<h2 id="网状模型"><a href="#网状模型" class="headerlink" title="网状模型"></a>网状模型</h2><p>采用网状结构来表示各类实体以及实体间的联系。<br>表示方法：（与层次数据模型相同）<br>网状模型的定义：满足下面两个条件的基本层次联系的集合：</p>
+<ul>
+<li> 允许一个以上的结点无双亲</li>
+<li>一个结点可以有多于一个的双亲</li>
+</ul>
+<h2 id="关系模型"><a href="#关系模型" class="headerlink" title="关系模型"></a>关系模型</h2><h3 id="关系模型的数据结构"><a href="#关系模型的数据结构" class="headerlink" title="关系模型的数据结构"></a>关系模型的数据结构</h3><ul>
+<li>关系（Relation） —— 一个关系对应通常说的一张表</li>
+<li>元组（Tuple） —— 表中的一行即为一个元组</li>
+<li>属性（ Attribute） ——表中的一列即为一个属性， 给每一个属性起一个名称即属性名</li>
+<li>主码（Key） ——也称码键。 表中的某个属性组， 它可以唯一确定一个元组</li>
+<li>域（Domain） ——是一组具有相同数据类型的值的集合。属性的取值范围来自某个域。<br>例：学生年龄属性的域（15～45岁），性别的域是（男， 女） ，<br>系名的域是一个学校所有系名的集合；</li>
+<li>分量——元组中的一个属性值。</li>
+<li>关系模式——对关系的描述<br>关系名（属性1，属性2， …，属性n）<br>学生（学号， 姓名，年龄，性别，系名，年级）</li>
+</ul>
+<p>关系必须是<strong>规范化</strong>的，满足一定的规范条件。<br>最基本的规范条件：关系的每一个分量必须是一个<strong>不可分</strong>的数据项， 不允许表中还有表。 </p>
+<table>
+<thead>
+<tr>
+<th align="center">关系术语</th>
+<th align="center">一般表格的术语</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">关系名</td>
+<td align="center">表名</td>
+</tr>
+<tr>
+<td align="center">关系模式</td>
+<td align="center">表头（表格的描述）</td>
+</tr>
+<tr>
+<td align="center">关系</td>
+<td align="center">（一张）二维表</td>
+</tr>
+<tr>
+<td align="center">元组</td>
+<td align="center">记录或行</td>
+</tr>
+<tr>
+<td align="center">属性</td>
+<td align="center">列</td>
+</tr>
+<tr>
+<td align="center">属性名</td>
+<td align="center">列名</td>
+</tr>
+<tr>
+<td align="center">属性值</td>
+<td align="center">列值</td>
+</tr>
+<tr>
+<td align="center">分量</td>
+<td align="center">一条记录中的一个列值</td>
+</tr>
+<tr>
+<td align="center">非规范关系</td>
+<td align="center">表中有表（大表中嵌有小表)</td>
+</tr>
+</tbody></table>
+<h3 id="关系模型的操纵与完整性约束"><a href="#关系模型的操纵与完整性约束" class="headerlink" title="关系模型的操纵与完整性约束"></a>关系模型的操纵与完整性约束</h3><p>数据操作：操作对象和操作结果都是关系</p>
+<ul>
+<li>查询</li>
+<li>插入</li>
+<li>删除</li>
+<li>更新</li>
+</ul>
+<p>关系的完整性约束条件：（前两个是关系的不变性）</p>
+<ul>
+<li>实体完整性</li>
+<li>参照完整性</li>
+<li>用户定义的完整性</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2019/02/03/Apache-1-installization/" class="prev">PREV</a><a href="/2019/01/12/HTML&amp;CSS-CSSSelector/" class="next">NEXT</a></div><div class="copyright"><p>© 2015 - 2021 <a href="https://huiskelvin.github.io">HuIsKelvin</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
