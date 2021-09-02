@@ -6,7 +6,7 @@
   <link href="https://huiskelvin.github.io/atom.xml" rel="self"/>
   
   <link href="https://huiskelvin.github.io/"/>
-  <updated>2021-08-29T11:19:20.341Z</updated>
+  <updated>2021-09-02T13:05:18.159Z</updated>
   <id>https://huiskelvin.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Golang 不同字符串拼接方法 benchmark</title>
+    <link href="https://huiskelvin.github.io/2021/09/02/golang-benchmark-string-concat/"/>
+    <id>https://huiskelvin.github.io/2021/09/02/golang-benchmark-string-concat/</id>
+    <published>2021-09-02T12:59:30.000Z</published>
+    <updated>2021-09-02T13:05:18.159Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h2><p>Golang 中常见字符串拼接方法：</p><ul><li>“+” 运算符</li><li>fmt.Sprintf</li><li>strings.Join</li><li>bytes.Buffer（以及预设 buffer 容量）</li><li>string.Builder（以及预设 buffer 容量）</li></ul><h2 id="预设场景"><a href="#预设场景" class="headerlink" title="预设场景"></a>预设场景</h2><p>模拟需要多次拼接字符串的场景。</p><p>对于一条基字符串（如 <code>&quot;BaseString&quot;</code>），拼接足够多次，最后返回 string 类型的变量。</p><h2 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h2><p><a href="https://github.com/HuIsKelvin/go-test-collection/tree/master/benchmark/string_concate">测试代码</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">PS E:\&gt; go <span class="built_in">test</span> -bench=<span class="string">&quot;.&quot;</span> -benchmem</span><br><span class="line">goos: windows</span><br><span class="line">goarch: amd64</span><br><span class="line">pkg: go-test-collection/string_concate</span><br><span class="line">cpu: Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz</span><br><span class="line">BenchmarkStringPlus-6                       5118            241411 ns/op         1606811 B/op        499 allocs/op</span><br><span class="line">BenchmarkFmtSprintf-6                       3759            310479 ns/op         1625079 B/op       1500 allocs/op</span><br><span class="line">BenchmarkStringsJoin-6                      5224            244217 ns/op         1606826 B/op        500 allocs/op</span><br><span class="line">BenchmarkByteBuffer-6                     171885              6377 ns/op           25872 B/op          9 allocs/op</span><br><span class="line">BenchmarkByteBufferPreSize-6              286476              4443 ns/op           12288 B/op          2 allocs/op</span><br><span class="line">BenchmarkStringBuilder-6                  203931              6203 ns/op           26736 B/op         14 allocs/op</span><br><span class="line">BenchmarkStringBuilderPreSize-6           436584              2880 ns/op            6144 B/op          1 allocs/op</span><br><span class="line">PASS</span><br><span class="line">ok      go-test-collection/string_concate       8.958s</span><br></pre></td></tr></table></figure><h2 id="结论分析"><a href="#结论分析" class="headerlink" title="结论分析"></a>结论分析</h2><p>在多次拼接字符串时，基于预设大小的 <code>strings.Builder</code> 的性能是最好的，无论是从执行速度还是占用内存的角度来说。其次性能较好的是基于预设大小的 <code>bytes.Buffer</code> 这种方法。再最后，性能从高到低为 <code>+</code>、<code>strings.Join</code> 和 <code>fmt.Sprintf</code>。</p><ul><li>在已知最终字符串长度的情况下，先给 buffer 预设大小。</li><li>将多种类型的数据拼接为字符串，则使用 <code>fmt.Sprintf</code>。</li><li>以零个或一个分隔符拼接已知的字符串数组时，使用 <code>strings.Join</code>。</li></ul><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li><a href="https://hermanschaaf.com/efficient-string-concatenation-in-go/">Efficient String Concatenation in Go</a></li><li><a href="https://segmentfault.com/a/1190000012978989">golang 几种字符串的连接方式</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;字符串拼接&quot;&gt;&lt;a href=&quot;#字符串拼接&quot; class=&quot;headerlink&quot; title=&quot;字符串拼接&quot;&gt;&lt;/a&gt;字符串拼接&lt;/h2&gt;&lt;p&gt;Golang 中常见字符串拼接方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“+” 运算符&lt;/li&gt;
+&lt;li&gt;fmt.Sprin</summary>
+      
+    
+    
+    
+    
+    <category term="go" scheme="https://huiskelvin.github.io/tags/go/"/>
+    
+  </entry>
   
   <entry>
     <title>一个 todo list 的小 demo</title>
