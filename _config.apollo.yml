@@ -1,7 +1,7 @@
 menu:
     Blog: /
     Archive: /archives/
-    Weibo: 
+    # Weibo: 
     GitHub: https://github.com/huiskelvin
     Rss: /atom.xml
     
