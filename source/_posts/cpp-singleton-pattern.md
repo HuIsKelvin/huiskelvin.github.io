@@ -1,10 +1,10 @@
 ---
-title: C++ 实现单例模式
+title: C++ - 实现单例模式
 date: 2021-09-02 21:58:21
 tags: Cpp, 设计模式
 ---
 
-# 1 概述
+## 1 概述
 
 总体实现方式：将构造函数设为私有的 private，然后通过类的一个**公共静态函数**来生成实例。
 并且，拷贝构造函数、移动构造函数、赋值运算符等也要设为 private（或者=delete）
@@ -19,9 +19,9 @@ tags: Cpp, 设计模式
 - memory barrier 模式（线程安全）
 - Atomic（线程安全）
 
-# 2 实现
+## 2 实现
 
-## 2.1 懒汉
+### 2.1 懒汉
 
 懒汉方式，只有当用到该单例时，才初始化单例。
 
@@ -66,7 +66,7 @@ Singleton* Singleton::getInstance() {
 }
 ```
 
-## 2.2 懒汉+加锁 mutex（双重检查锁模式）
+### 2.2 懒汉+加锁 mutex（双重检查锁模式）
 
 懒汉方式是线程不安全的，所以需要加保护措施。使用**双重检查锁**，可以较大限度减小锁的粒度。
 
@@ -133,7 +133,7 @@ Singleton* Singleton::getInstance() {
 }
 ```
 
-## 2.3 饿汉
+### 2.3 饿汉
 
 饿汉方式在最初就生成一个单例。
 
@@ -179,7 +179,7 @@ Singleton* Singleton::getInstance() {
 }
 ```
 
-## 2.4 局部静态实例
+### 2.4 局部静态实例
 
 在 C++11 后，在 getInstance() 内声明一个局部静态对象，则只会有着一个单例。并且，该静态对象会在程序结束时自动析构回收。
 
@@ -212,7 +212,7 @@ SingleInstance_local & SingleInstance_local::getInstance() {
 }
 ```
 
-## 2.5 pthread_once
+### 2.5 pthread_once
 
 在 unix 平台的话，在不适用 C++11 的情况下，还可以通过 `pthread_once` 来实现 Singleton。
 
