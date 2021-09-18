@@ -1,5 +1,5 @@
 ---
-title: Golang 不同字符串拼接方法 benchmark
+title: Golang - 不同字符串拼接方法 benchmark
 date: 2021-09-02 20:59:30
 tags: go
 ---
