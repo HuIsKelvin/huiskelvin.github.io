@@ -5,14 +5,14 @@ tags: CSS
 description: hover一个元素，另一个元素也显示
 ---
 
-# 描述
+## 1 描述
 
 页面上有一个元素A，和另一个元素B。当鼠标悬浮在元素A上时，元素B同时显示。
 
 例子：
 [![ABoRxK.md.gif](https://s2.ax1x.com/2019/03/30/ABoRxK.md.gif)](https://imgchr.com/i/ABoRxK)
 
-# 实现
+## 2 实现
 
 例子页面：
 
@@ -56,7 +56,7 @@ description: hover一个元素，另一个元素也显示
 
 ```
 
-## CSS实现
+### 2.1 CSS实现
 
 使用CSS的伪类和选择器来实现。
 
@@ -70,7 +70,7 @@ description: hover一个元素，另一个元素也显示
 ```
 
 
-## Javascript事件监听来实现
+### 2.2Javascript事件监听来实现
 
 通过元素A监听事件 `mouseover` 和 `mouseout`，来控制元素B的显示和隐藏。
 
