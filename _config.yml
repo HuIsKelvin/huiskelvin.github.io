@@ -6,7 +6,7 @@
 title: Kelvin's blog
 subtitle: Never stop leanring
 description: Stay hungry, stay foolish.
-keywords: blog
+keywords: blog, C++, Go
 author: HuIsKelvin
 language: 
 timezone: ''
@@ -99,7 +99,8 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: apollo
+# theme: apollo
+theme: hexo-theme-apollo
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
