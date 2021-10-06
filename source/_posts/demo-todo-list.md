@@ -2,10 +2,9 @@
 title: 一个 todo list 的小 demo
 date: 2019-04-13 23:14:20
 tags:
-description: Todo list
 ---
-
-# todo list
+使用原生 JS 实现一个简单 Todo list。
+<!-- more -->
 
 ## 功能需求
 

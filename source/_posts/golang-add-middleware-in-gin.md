@@ -4,6 +4,10 @@ date: 2021-09-18 20:24:28
 tags: Golang
 ---
 
+使用 Gin 框架时，自定义中间件 middleware，以对请求做不同操作。
+
+<!-- more -->
+
 ## 0x01 引言
 
 [Gin](https://github.com/gin-gonic/gin) 是一个基于 Golang 的网络框架，不仅具有高性能，而且极易使用。它比另一个 Golang 的常见的 HTTP 框架 [HttpRouter](https://github.com/julienschmidt/httprouter) 速度快了将近 40 倍。

@@ -1,8 +1,12 @@
 ---
 title: Golang - 不同字符串拼接方法 benchmark
 date: 2021-09-02 20:59:30
-tags: go
+tags: Golang
 ---
+
+使用 go test，比较 Golang 中不同字符串拼接方法的性能差异（耗时和内存）。
+
+<!-- more -->
 
 # 1 字符串拼接
 
