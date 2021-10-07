@@ -2,11 +2,12 @@
 title: CSS - div的高度填满剩余空间
 date: 2019-04-04 22:15:11
 tags:
+  - front-end
   - CSS
 description: 用CSS实现div的高度填满剩余空间
 ---
 
-# 描述
+## 1 描述
 
 使用CSS实现。
 页面有上下两个部分，上部分定高，下部分填满窗口剩余的高度，不能出现纵向滚动条。
@@ -25,7 +26,9 @@ HTML结构如下：
 </div>
 ```
 
-## 使用float
+## 2 具体实现
+
+### 2.1 使用float
 
 将 `#nav` 设置为 `float: left;`，再让 `#content` 的宽度为 100%。
 
@@ -56,7 +59,7 @@ body {
 }
 ```
 
-## 使用absolute，再限定top和bottom
+### 2.2 使用absolute，再限定top和bottom
 
 使用 `position: absolute;`，再配合`top`和`bottom`，来强制定义盒模型的区域。
 
@@ -82,7 +85,7 @@ body {
 }
 ```
 
-## 使用flex
+### 2.3 使用flex
 
 使用 `position: flex;`，主轴设置为纵向。
 `flex-grow` 用来指定父容器多余空间的分配比率。
@@ -115,7 +118,7 @@ body {
 }
 ```
 
-## 使用calc()和 vh
+## 2.4 使用calc()和 vh
 
 `calc()` 函数是`CSS`中用于动态计算长度值。
 `vh` 是相对于视口的高度，视口被均分为100单位，一个单位为`1vh`。
