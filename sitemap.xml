@@ -2,16 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://huiskelvin.github.io/2021/09/18/golang-add-middleware-in-gin/</loc>
+    <loc>https://huiskelvin.github.io/about/index.html</loc>
     
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-10-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/2021/10/07/frontend-hexo-add-new-page/</loc>
+    
+    <lastmod>2021-10-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/2021/09/02/golang-benchmark-string-concat/</loc>
+    
+    <lastmod>2021-10-06</lastmod>
     
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/2021/09/02/cpp-singleton-pattern/</loc>
     
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/2021/10/06/tool-vlc-screencast/</loc>
+    
+    <lastmod>2021-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/2019/04/13/demo-todo-list/</loc>
+    
+    <lastmod>2021-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/2021/09/22/linux-add-new-user/</loc>
+    
+    <lastmod>2021-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/2021/09/18/golang-add-middleware-in-gin/</loc>
+    
+    <lastmod>2021-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/2019/01/13/Database-Introduction/</loc>
+    
+    <lastmod>2021-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/2019/03/30/frontend-hover-item-show-another-item/</loc>
+    
+    <lastmod>2021-09-22</lastmod>
     
   </url>
   
@@ -23,86 +79,58 @@
   </url>
   
   <url>
-    <loc>https://huiskelvin.github.io/2021/09/02/golang-benchmark-string-concat/</loc>
+    <loc>https://huiskelvin.github.io/2019/03/08/problems-in-using-Vue/</loc>
     
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-09-02</lastmod>
     
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/2019/03/24/javascript-1-introduction/</loc>
     
-    <lastmod>2021-08-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://huiskelvin.github.io/2019/03/08/problems-in-using-Vue/</loc>
-    
-    <lastmod>2021-08-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://huiskelvin.github.io/2019/03/30/hover-item-show-another-item/</loc>
-    
-    <lastmod>2021-08-29</lastmod>
+    <lastmod>2021-09-02</lastmod>
     
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/2019/04/03/duplicate-repetitive-elements-in-array/</loc>
     
-    <lastmod>2021-08-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://huiskelvin.github.io/2019/04/13/demo-todo-list/</loc>
-    
-    <lastmod>2021-08-29</lastmod>
+    <lastmod>2021-09-02</lastmod>
     
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/2019/04/01/cplusplus-2-function/</loc>
     
-    <lastmod>2021-08-29</lastmod>
+    <lastmod>2021-09-02</lastmod>
     
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/2019/04/01/cplusplus-1-base-knowledge/</loc>
     
-    <lastmod>2021-08-29</lastmod>
+    <lastmod>2021-09-02</lastmod>
     
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/2019/01/12/HTML&CSS-CSSSelector/</loc>
     
-    <lastmod>2021-08-29</lastmod>
+    <lastmod>2021-09-02</lastmod>
     
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/2019/02/03/Apache-1-installization/</loc>
     
-    <lastmod>2021-08-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://huiskelvin.github.io/2019/01/13/Database-Introduction/</loc>
-    
-    <lastmod>2021-08-29</lastmod>
+    <lastmod>2021-09-02</lastmod>
     
   </url>
   
 
   <url>
     <loc>https://huiskelvin.github.io/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -110,81 +138,137 @@
   
   <url>
     <loc>https://huiskelvin.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/tags/Apache/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/tags/CSS/</loc>
-    <lastmod>2021-09-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://huiskelvin.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/tags/C/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://huiskelvin.github.io/tags/JavaScript/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <loc>https://huiskelvin.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2021-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://huiskelvin.github.io/tags/Vue/</loc>
-    <lastmod>2021-09-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://huiskelvin.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2021-09-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://huiskelvin.github.io/tags/go/</loc>
-    <lastmod>2021-09-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://huiskelvin.github.io/tags/Cpp-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <loc>https://huiskelvin.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2021-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://huiskelvin.github.io/tags/Golang/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/tags/Linux/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/tags/Vue/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/tags/JavaScript/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/tags/tool/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/tags/blog/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/tags/hexo/</loc>
+    <lastmod>2021-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
 
+  
+  <url>
+    <loc>https://huiskelvin.github.io/categories/C/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/categories/C/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/categories/Linux/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://huiskelvin.github.io/categories/Linux/tool/</loc>
+    <lastmod>2021-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
