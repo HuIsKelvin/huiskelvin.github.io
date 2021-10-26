@@ -6,7 +6,7 @@
   <link href="https://huiskelvin.github.io/atom.xml" rel="self"/>
   
   <link href="https://huiskelvin.github.io/"/>
-  <updated>2021-10-26T12:40:09.867Z</updated>
+  <updated>2021-10-26T12:55:01.124Z</updated>
   <id>https://huiskelvin.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://huiskelvin.github.io/2021/10/26/frontend-hexo-local-image/"/>
     <id>https://huiskelvin.github.io/2021/10/26/frontend-hexo-local-image/</id>
     <published>2021-10-26T12:25:27.000Z</published>
-    <updated>2021-10-26T12:40:09.867Z</updated>
+    <updated>2021-10-26T12:55:01.124Z</updated>
     
-    <content type="html"><![CDATA[<p>在 hexo 博客中插入博客，可以使用<strong>图床</strong>和<strong>本地图片</strong>两种方式。而图床可能由于网络原因导致加载问题，并且需要另外管理。所以，尝试使用本地的图片。</p><span id="more"></span><h2 id="1-概览"><a href="#1-概览" class="headerlink" title="1 概览"></a>1 概览</h2><p>在 hexo 搭建的博客中使用本地图片，主要有几种方式：</p><ol><li>在 <code>source/img</code> 文件夹中放置图片。</li><li>使用插件 <code>hexo-asset-image</code>。</li></ol><h3 id="2-source-img-文件夹"><a href="#2-source-img-文件夹" class="headerlink" title="2 source/img 文件夹"></a>2 <code>source/img</code> 文件夹</h3><p>在本地 <code>source</code> 文件夹下面，新建 <code>img</code> 文件夹，用于存放照片。</p><p>假设有一张照片 <code>source/img/logo.jpg</code>。</p><p>在文章的 <code>markdown</code> 中，使用</p><ul><li><code>![logo](/img/logo.jpg)</code></li><li><code>&lt;img src=&quot;/img/logo.jpg&quot;&gt;</code></li></ul><p>插入图片。</p><img src="/img/logo.jpg"><p>上面这张图片就是以这种方式插入。</p><h3 id="3-hexo-asset-image-插件"><a href="#3-hexo-asset-image-插件" class="headerlink" title="3 hexo-asset-image 插件"></a>3 <code>hexo-asset-image</code> 插件</h3>]]></content>
+    <content type="html"><![CDATA[<p>在 hexo 博客中插入博客，可以使用<strong>图床</strong>和<strong>本地图片</strong>两种方式。而图床可能由于网络原因导致加载问题，并且需要另外管理。所以，尝试使用本地的图片。</p><span id="more"></span><h2 id="1-概览"><a href="#1-概览" class="headerlink" title="1 概览"></a>1 概览</h2><p>在 hexo 搭建的博客中使用本地图片，主要有几种方式：</p><ol><li>在 <code>source/img</code> 文件夹中放置图片。</li><li>使用插件 <code>hexo-asset-image</code>。</li></ol><h3 id="2-source-img-文件夹"><a href="#2-source-img-文件夹" class="headerlink" title="2 source/img 文件夹"></a>2 <code>source/img</code> 文件夹</h3><p>在本地 <code>source</code> 文件夹下面，新建 <code>img</code> 文件夹，用于存放照片。</p><p>假设有一张照片 <code>source/img/logo.jpg</code>。</p><p>在文章的 <code>markdown</code> 中，使用</p><ul><li><code>![logo](/img/logo.jpg)</code></li><li><code>&lt;img src=&quot;/img/logo.jpg&quot;&gt;</code></li></ul><p>插入图片。</p><img src="img/logo.png" style="width:50px;margin:15px;"><p>上面<u>这张图片</u>就是以这种方式插入。</p><h3 id="3-hexo-asset-image-插件"><a href="#3-hexo-asset-image-插件" class="headerlink" title="3 hexo-asset-image 插件"></a>3 <code>hexo-asset-image</code> 插件</h3><p>首先，安装插件 <code>hexo-asset-image</code>。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm install hexo-asset-image --save</span></span><br><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure><p>然后在 <code>_config.yml</code> 中加入 <code>post_asset_folder: true</code>。</p><p>之后，用<code>hexo new post_title</code>（post_title 就是文章标题）新建文章时，会在 <code>source/_post</code> 下生成一个同名文件夹 <code>source/_post/post_title</code>。可以把这篇文章用到的图片，放入此文件夹中，如图片 <code>test.jpg</code>。</p><p>那么，在文章的 markdown 中插入图片。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">alt</span>](<span class="link">test.jpg</span>)</span><br></pre></td></tr></table></figure>]]></content>
     
     
     <summary type="html">&lt;p&gt;在 hexo 博客中插入博客，可以使用&lt;strong&gt;图床&lt;/strong&gt;和&lt;strong&gt;本地图片&lt;/strong&gt;两种方式。而图床可能由于网络原因导致加载问题，并且需要另外管理。所以，尝试使用本地的图片。&lt;/p&gt;</summary>
@@ -34,31 +34,6 @@
     <category term="blog" scheme="https://huiskelvin.github.io/tags/blog/"/>
     
     <category term="hexo" scheme="https://huiskelvin.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>asset-test</title>
-    <link href="https://huiskelvin.github.io/2021/10/26/asset-test/"/>
-    <id>https://huiskelvin.github.io/2021/10/26/asset-test/</id>
-    <published>2021-10-26T11:20:39.000Z</published>
-    <updated>2021-10-26T12:24:20.471Z</updated>
-    
-    <content type="html"><![CDATA[<!-- ![image](asset-test/test.jpg)![image](test.jpg) --><!-- ![logo](/img/test.jpg) --><img src="/img/test.jpg">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;!-- ![image](asset-test/test.jpg)
-![image](test.jpg) --&gt;
-&lt;!-- ![logo](/img/test.jpg) --&gt;
-
-&lt;img src=&quot;/img/test.jpg&quot;&gt;
-</summary>
-      
-    
-    
-    
     
   </entry>
   
