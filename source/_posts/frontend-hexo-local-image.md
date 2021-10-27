@@ -1,5 +1,5 @@
 ---
-title: hexo 博客中使用本地图片
+title: Hexo 博客中使用本地图片
 date: 2021-10-26 20:25:27
 tags:
 - blog

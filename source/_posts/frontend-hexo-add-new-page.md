@@ -1,5 +1,5 @@
 ---
-title: hexo 搭建的博客下自定义新页面
+title: Hexo 搭建的博客下自定义新页面
 date: 2021-10-07 09:49:37
 tags:
 - blog
