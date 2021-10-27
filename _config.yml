@@ -13,7 +13,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://huiskelvin.github.io/
+# url: https://huiskelvin.github.io/
+url: http://hurk.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -97,6 +98,8 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+plugins:
+- hexo-generator-cname
 ## Themes: https://hexo.io/themes/
 # theme: landscape
 # theme: apollo
