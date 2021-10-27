@@ -22,11 +22,15 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm install hexo-asset-image --save</span></span><br><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 
 <p>然后在 <code>_config.yml</code> 中加入 <code>post_asset_folder: true</code>。</p>
-<p>之后，用<code>hexo new post_title</code>（post_title 就是文章标题）新建文章时，会在 <code>source/_post</code> 下生成一个同名文件夹 <code>source/_post/post_title</code>。可以把这篇文章用到的图片，放入此文件夹中，如图片 <code>test.jpg</code>。</p>
+<p>之后，用<code>hexo new post_title</code>（post_title 就是文章标题）新建文章时，会在 <code>source/_post</code> 下生成一个同名文件夹 <code>source/_post/post_title</code>。可以把这篇文章用到的图片，放入此文件夹中，如图片 <code>test.png</code>。</p>
 <p>那么，在文章的 markdown 中插入图片。</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">alt</span>](<span class="link">test.jpg</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">alt</span>](<span class="link">test.png</span>)</span><br><span class="line">&lt;!-- 或 --&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;test.png&quot;</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
+<img src="/2021/10/26/frontend-hexo-local-image/test.png" style="width:50px;margin:15px;">
+
+<p>上面<u>这张图片</u>就是以这种方式插入。</p>
 <h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/codehome/p/8428738.html?utm_source=debugrun&utm_medium=referral">Hexo中添加本地图片</a></li>
+<li><a target="_blank" rel="noopener" href="https://wangwei1237.github.io/2020/02/05/handle-the-bug-of-hexo-asset-image-plugin/">解决hexo-asset-image的图片地址错误问题</a></li>
 </ul>
-</div></article></div></main><footer><div class="paginator"><a href="/2021/10/07/frontend-hexo-add-new-page/" class="next">NEXT</a></div><div class="copyright"><p>© 2021 <a href="https://huiskelvin.github.io">HuIsKelvin</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
+</div></article></div></main><footer><div class="paginator"><a href="/2021/10/27/asset-test/" class="prev">上一篇</a><a href="/2021/10/07/frontend-hexo-add-new-page/" class="next">下一篇</a></div><div class="copyright"><p>© 2021 <a href="https://huiskelvin.github.io">HuIsKelvin</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
