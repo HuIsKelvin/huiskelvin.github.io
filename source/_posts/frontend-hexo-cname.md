@@ -10,6 +10,14 @@ tags:
 
 以下将解决这个问题。
 
+## 概览
+
+在 `GitHub` 的 `repo` 中，设置 `GitHub Page` 并自定义自己的域名，如下图所示。
+
+![github page setting cname](github_page_setting_cname.png)
+
+但是这种方法，每次 `hexo deploy` 之后，都会覆盖掉生成的 `CNAME`。每次都要重新设置，非常麻烦。
+
 解决方法：
 1. 手动配置 `CNAME` 文件
 2. `hexo-generator-cname` 插件
