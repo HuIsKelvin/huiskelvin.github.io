@@ -1,0 +1,16 @@
+menu:
+    Blog: /
+    Archive: /archives/
+    # Weibo: 
+    GitHub: https://github.com/huiskelvin
+    Rss: /atom.xml
+    
+# excerpt_link: Read More
+
+# 主题 apollo 的配置项
+# 在归档页面显示所有文章，需要上面安装的 hexo-generator-archive 插件支持
+archive_generator:
+    per_page: 0
+    yearly: false
+    monthly: false
+    daily: false
