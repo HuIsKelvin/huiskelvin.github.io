@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Hexo + Github Page 配置博客的个人域名 · Kelvin's blog</title><meta name="description" content="Hexo + Github Page 配置博客的个人域名 - HuIsKelvin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://hurk.top/atom.xml" title="Kelvin's blog"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kelvin's blog" type="application/atom+xml">
+</head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/huiskelvin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Hexo + Github Page 配置博客的个人域名</h1><div class="post-info">Oct 27, 2021</div><div class="tags"><a href="/tags/blog/" class="tag-title">#blog</a><a href="/tags/hexo/" class="tag-title">#hexo</a></div><div class="post-content"><p>如果有自己的域名，并解析到 Github Page 的域名（<code>your_name.github.io</code>）上时，直接使用 <code>hexo deploy</code> 部署博客，每次都会覆盖掉 <code>CNAME</code>。</p>
+<p>以下将解决这个问题。</p>
+<p>解决方法：</p>
+<ol>
+<li>手动配置 <code>CNAME</code> 文件</li>
+<li><code>hexo-generator-cname</code> 插件</li>
+</ol>
+<span id="more"></span>
+
+<h2 id="1-手动配置-CNAME-文件"><a href="#1-手动配置-CNAME-文件" class="headerlink" title="1 手动配置 CNAME 文件"></a>1 手动配置 <code>CNAME</code> 文件</h2><p>在 <code>source</code> 文件夹下，创建 <code>CNAME</code> 文件，并写入自己的域名。</p>
+<p>栗子，<code>CNAME</code> 文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hurk.top  # 我自己的域名</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-使用-hexo-generator-cname-插件"><a href="#2-使用-hexo-generator-cname-插件" class="headerlink" title="2 使用 hexo-generator-cname 插件"></a>2 使用 <code>hexo-generator-cname</code> 插件</h2><p>安装插件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-generator-cname --save</span><br></pre></td></tr></table></figure>
+
+<p>然后，配置 <code>_config.yml</code> 文件。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启用插件</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo-generator-cname</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置想用的域名</span></span><br><span class="line"><span class="comment"># 如果默认用 Github Page，则是 https://your_github_name.github.io</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://hurk.top</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/chengxs/p/7496265.html">github+hexo搭建自己的博客网站（七）注意事项（避免read.me，CNAME文件的覆盖，手动改github page的域名）</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/aealen/article/details/105516944">Hexo在部署到Github后CNAME文件会消失或改变的解决方法</a></li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2021/10/26/frontend-hexo-local-image/" class="next">NEXT</a></div><div class="copyright"><p>© 2021 <a href="http://hurk.top">HuIsKelvin</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

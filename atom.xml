@@ -3,11 +3,11 @@
   <title>Kelvin&#39;s blog</title>
   
   <subtitle>Never stop leanring</subtitle>
-  <link href="https://huiskelvin.github.io/atom.xml" rel="self"/>
+  <link href="http://hurk.top/atom.xml" rel="self"/>
   
-  <link href="https://huiskelvin.github.io/"/>
-  <updated>2021-10-27T03:28:03.366Z</updated>
-  <id>https://huiskelvin.github.io/</id>
+  <link href="http://hurk.top/"/>
+  <updated>2021-10-27T12:58:06.908Z</updated>
+  <id>http://hurk.top/</id>
   
   <author>
     <name>HuIsKelvin</name>
@@ -17,32 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>asset-test</title>
-    <link href="https://huiskelvin.github.io/2021/10/27/asset-test/"/>
-    <id>https://huiskelvin.github.io/2021/10/27/asset-test/</id>
-    <published>2021-10-27T03:21:12.000Z</published>
-    <updated>2021-10-27T03:28:03.366Z</updated>
+    <title>Hexo + Github Page 配置博客的个人域名</title>
+    <link href="http://hurk.top/2021/10/27/frontend-hexo-cname/"/>
+    <id>http://hurk.top/2021/10/27/frontend-hexo-cname/</id>
+    <published>2021-10-27T12:43:46.000Z</published>
+    <updated>2021-10-27T12:58:06.908Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/2021/10/27/asset-test/logo.png" alt="logo"><br><img src="/2021/10/27/asset-test/logo.png" style="width:25px;"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/10/27/asset-test/logo.png&quot; alt=&quot;logo&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2021/10/27/asset-test/logo.png&quot; style=&quot;width:25px;&quot;&gt;&lt;/p&gt;
-</summary>
-      
+    <content type="html"><![CDATA[<p>如果有自己的域名，并解析到 Github Page 的域名（<code>your_name.github.io</code>）上时，直接使用 <code>hexo deploy</code> 部署博客，每次都会覆盖掉 <code>CNAME</code>。</p><p>以下将解决这个问题。</p><p>解决方法：</p><ol><li>手动配置 <code>CNAME</code> 文件</li><li><code>hexo-generator-cname</code> 插件</li></ol><span id="more"></span><h2 id="1-手动配置-CNAME-文件"><a href="#1-手动配置-CNAME-文件" class="headerlink" title="1 手动配置 CNAME 文件"></a>1 手动配置 <code>CNAME</code> 文件</h2><p>在 <code>source</code> 文件夹下，创建 <code>CNAME</code> 文件，并写入自己的域名。</p><p>栗子，<code>CNAME</code> 文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hurk.top  # 我自己的域名</span><br></pre></td></tr></table></figure><h2 id="2-使用-hexo-generator-cname-插件"><a href="#2-使用-hexo-generator-cname-插件" class="headerlink" title="2 使用 hexo-generator-cname 插件"></a>2 使用 <code>hexo-generator-cname</code> 插件</h2><p>安装插件。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-generator-cname --save</span><br></pre></td></tr></table></figure><p>然后，配置 <code>_config.yml</code> 文件。</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启用插件</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo-generator-cname</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置想用的域名</span></span><br><span class="line"><span class="comment"># 如果默认用 Github Page，则是 https://your_github_name.github.io</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://hurk.top</span></span><br></pre></td></tr></table></figure><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li><a href="https://www.cnblogs.com/chengxs/p/7496265.html">github+hexo搭建自己的博客网站（七）注意事项（避免read.me，CNAME文件的覆盖，手动改github page的域名）</a></li><li><a href="https://blog.csdn.net/aealen/article/details/105516944">Hexo在部署到Github后CNAME文件会消失或改变的解决方法</a></li></ul>]]></content>
     
     
+    <summary type="html">&lt;p&gt;如果有自己的域名，并解析到 Github Page 的域名（&lt;code&gt;your_name.github.io&lt;/code&gt;）上时，直接使用 &lt;code&gt;hexo deploy&lt;/code&gt; 部署博客，每次都会覆盖掉 &lt;code&gt;CNAME&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;以下将解决这个问题。&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;手动配置 &lt;code&gt;CNAME&lt;/code&gt; 文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo-generator-cname&lt;/code&gt; 插件&lt;/li&gt;
+&lt;/ol&gt;</summary>
     
+    
+    
+    
+    <category term="blog" scheme="http://hurk.top/tags/blog/"/>
+    
+    <category term="hexo" scheme="http://hurk.top/tags/hexo/"/>
     
   </entry>
   
   <entry>
-    <title>hexo 博客中使用本地图片</title>
-    <link href="https://huiskelvin.github.io/2021/10/26/frontend-hexo-local-image/"/>
-    <id>https://huiskelvin.github.io/2021/10/26/frontend-hexo-local-image/</id>
+    <title>Hexo 博客中使用本地图片</title>
+    <link href="http://hurk.top/2021/10/26/frontend-hexo-local-image/"/>
+    <id>http://hurk.top/2021/10/26/frontend-hexo-local-image/</id>
     <published>2021-10-26T12:25:27.000Z</published>
-    <updated>2021-10-27T03:30:54.842Z</updated>
+    <updated>2021-10-27T12:45:02.260Z</updated>
     
     <content type="html"><![CDATA[<p>在 hexo 博客中插入博客，可以使用<strong>图床</strong>和<strong>本地图片</strong>两种方式。而图床可能由于网络原因导致加载问题，并且需要另外管理。所以，尝试使用本地的图片。</p><span id="more"></span><h2 id="1-概览"><a href="#1-概览" class="headerlink" title="1 概览"></a>1 概览</h2><p>在 hexo 搭建的博客中使用本地图片，主要有几种方式：</p><ol><li>在 <code>source/img</code> 文件夹中放置图片。</li><li>使用插件 <code>hexo-asset-image</code>。</li></ol><h3 id="2-source-img-文件夹"><a href="#2-source-img-文件夹" class="headerlink" title="2 source/img 文件夹"></a>2 <code>source/img</code> 文件夹</h3><p>在本地 <code>source</code> 文件夹下面，新建 <code>img</code> 文件夹，用于存放照片。</p><p>假设有一张照片 <code>source/img/logo.jpg</code>。</p><p>在文章的 <code>markdown</code> 中，使用</p><ul><li><code>![logo](/img/logo.jpg)</code></li><li><code>&lt;img src=&quot;/img/logo.jpg&quot;&gt;</code></li></ul><p>插入图片。</p><img src="/img/logo.png" style="width:50px;margin:15px;"><p>上面<u>这张图片</u>就是以这种方式插入。</p><h3 id="3-hexo-asset-image-插件"><a href="#3-hexo-asset-image-插件" class="headerlink" title="3 hexo-asset-image 插件"></a>3 <code>hexo-asset-image</code> 插件</h3><p>首先，安装插件 <code>hexo-asset-image</code>。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm install hexo-asset-image --save</span></span><br><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure><p>然后在 <code>_config.yml</code> 中加入 <code>post_asset_folder: true</code>。</p><p>之后，用<code>hexo new post_title</code>（post_title 就是文章标题）新建文章时，会在 <code>source/_post</code> 下生成一个同名文件夹 <code>source/_post/post_title</code>。可以把这篇文章用到的图片，放入此文件夹中，如图片 <code>test.png</code>。</p><p>那么，在文章的 markdown 中插入图片。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">alt</span>](<span class="link">test.png</span>)</span><br><span class="line">&lt;!-- 或 --&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;test.png&quot;</span>&gt;</span></span></span><br></pre></td></tr></table></figure><img src="/2021/10/26/frontend-hexo-local-image/test.png" style="width:50px;margin:15px;"><p>上面<u>这张图片</u>就是以这种方式插入。</p><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul><li><a href="https://www.cnblogs.com/codehome/p/8428738.html?utm_source=debugrun&utm_medium=referral">Hexo中添加本地图片</a></li><li><a href="https://wangwei1237.github.io/2020/02/05/handle-the-bug-of-hexo-asset-image-plugin/">解决hexo-asset-image的图片地址错误问题</a></li></ul>]]></content>
     
@@ -52,18 +58,18 @@
     
     
     
-    <category term="blog" scheme="https://huiskelvin.github.io/tags/blog/"/>
+    <category term="blog" scheme="http://hurk.top/tags/blog/"/>
     
-    <category term="hexo" scheme="https://huiskelvin.github.io/tags/hexo/"/>
+    <category term="hexo" scheme="http://hurk.top/tags/hexo/"/>
     
   </entry>
   
   <entry>
-    <title>hexo 搭建的博客下自定义新页面</title>
-    <link href="https://huiskelvin.github.io/2021/10/07/frontend-hexo-add-new-page/"/>
-    <id>https://huiskelvin.github.io/2021/10/07/frontend-hexo-add-new-page/</id>
+    <title>Hexo 搭建的博客下自定义新页面</title>
+    <link href="http://hurk.top/2021/10/07/frontend-hexo-add-new-page/"/>
+    <id>http://hurk.top/2021/10/07/frontend-hexo-add-new-page/</id>
     <published>2021-10-07T01:49:37.000Z</published>
-    <updated>2021-10-07T02:00:51.057Z</updated>
+    <updated>2021-10-27T12:44:54.251Z</updated>
     
     <content type="html"><![CDATA[<p>使用 hexo 和 jade 自定义博客的新页面，以 about 页为例。<br>关于我在 hexo 搭的博客里介绍如何基于 hexo 自定义新页面这件事。</p><span id="more"></span><h2 id="1-前情提要"><a href="#1-前情提要" class="headerlink" title="1. 前情提要"></a>1. 前情提要</h2><h3 id="1-1-jade"><a href="#1-1-jade" class="headerlink" title="1.1 jade"></a>1.1 jade</h3><h2 id="2-增加新页面"><a href="#2-增加新页面" class="headerlink" title="2. 增加新页面"></a>2. 增加新页面</h2><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul><li><a href="http://www.manongjc.com/detail/8-tapvdvhhfcecwin.html">hexo–新建页面、修改主页</a></li><li><a href="https://www.cnblogs.com/cowboybusy/p/11146634.html">hexo–定制开发</a></li><li><a href="https://www.cnblogs.com/Mr-liyang/p/7677059.html">Jade模板引擎使用详解</a></li></ul>]]></content>
     
@@ -73,16 +79,16 @@
     
     
     
-    <category term="blog" scheme="https://huiskelvin.github.io/tags/blog/"/>
+    <category term="blog" scheme="http://hurk.top/tags/blog/"/>
     
-    <category term="hexo" scheme="https://huiskelvin.github.io/tags/hexo/"/>
+    <category term="hexo" scheme="http://hurk.top/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu 下录屏</title>
-    <link href="https://huiskelvin.github.io/2021/10/06/tool-vlc-screencast/"/>
-    <id>https://huiskelvin.github.io/2021/10/06/tool-vlc-screencast/</id>
+    <link href="http://hurk.top/2021/10/06/tool-vlc-screencast/"/>
+    <id>http://hurk.top/2021/10/06/tool-vlc-screencast/</id>
     <published>2021-10-06T08:50:31.000Z</published>
     <updated>2021-10-06T09:23:26.583Z</updated>
     
@@ -97,21 +103,21 @@
     
     
     
-    <category term="Linux" scheme="https://huiskelvin.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://hurk.top/categories/Linux/"/>
     
-    <category term="tool" scheme="https://huiskelvin.github.io/categories/Linux/tool/"/>
+    <category term="tool" scheme="http://hurk.top/categories/Linux/tool/"/>
     
     
-    <category term="tool" scheme="https://huiskelvin.github.io/tags/tool/"/>
+    <category term="tool" scheme="http://hurk.top/tags/tool/"/>
     
-    <category term="工具" scheme="https://huiskelvin.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="http://hurk.top/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>Linux 创建新用户</title>
-    <link href="https://huiskelvin.github.io/2021/09/22/linux-add-new-user/"/>
-    <id>https://huiskelvin.github.io/2021/09/22/linux-add-new-user/</id>
+    <link href="http://hurk.top/2021/09/22/linux-add-new-user/"/>
+    <id>http://hurk.top/2021/09/22/linux-add-new-user/</id>
     <published>2021-09-22T11:26:00.000Z</published>
     <updated>2021-10-06T09:20:33.717Z</updated>
     
@@ -123,14 +129,14 @@
     
     
     
-    <category term="Linux" scheme="https://huiskelvin.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://hurk.top/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Golang - 在 Gin 中自定义中间件</title>
-    <link href="https://huiskelvin.github.io/2021/09/18/golang-add-middleware-in-gin/"/>
-    <id>https://huiskelvin.github.io/2021/09/18/golang-add-middleware-in-gin/</id>
+    <link href="http://hurk.top/2021/09/18/golang-add-middleware-in-gin/"/>
+    <id>http://hurk.top/2021/09/18/golang-add-middleware-in-gin/</id>
     <published>2021-09-18T12:24:28.000Z</published>
     <updated>2021-10-06T09:11:40.236Z</updated>
     
@@ -142,14 +148,14 @@
     
     
     
-    <category term="Golang" scheme="https://huiskelvin.github.io/tags/Golang/"/>
+    <category term="Golang" scheme="http://hurk.top/tags/Golang/"/>
     
   </entry>
   
   <entry>
     <title>C++ - 实现单例模式</title>
-    <link href="https://huiskelvin.github.io/2021/09/02/cpp-singleton-pattern/"/>
-    <id>https://huiskelvin.github.io/2021/09/02/cpp-singleton-pattern/</id>
+    <link href="http://hurk.top/2021/09/02/cpp-singleton-pattern/"/>
+    <id>http://hurk.top/2021/09/02/cpp-singleton-pattern/</id>
     <published>2021-09-02T13:58:21.000Z</published>
     <updated>2021-10-06T11:10:22.345Z</updated>
     
@@ -160,21 +166,21 @@
     
     
     
-    <category term="C++" scheme="https://huiskelvin.github.io/categories/C/"/>
+    <category term="C++" scheme="http://hurk.top/categories/C/"/>
     
-    <category term="设计模式" scheme="https://huiskelvin.github.io/categories/C/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <category term="设计模式" scheme="http://hurk.top/categories/C/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-    <category term="C++" scheme="https://huiskelvin.github.io/tags/C/"/>
+    <category term="C++" scheme="http://hurk.top/tags/C/"/>
     
-    <category term="设计模式" scheme="https://huiskelvin.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <category term="设计模式" scheme="http://hurk.top/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>Golang - 不同字符串拼接方法 benchmark</title>
-    <link href="https://huiskelvin.github.io/2021/09/02/golang-benchmark-string-concat/"/>
-    <id>https://huiskelvin.github.io/2021/09/02/golang-benchmark-string-concat/</id>
+    <link href="http://hurk.top/2021/09/02/golang-benchmark-string-concat/"/>
+    <id>http://hurk.top/2021/09/02/golang-benchmark-string-concat/</id>
     <published>2021-09-02T12:59:30.000Z</published>
     <updated>2021-10-06T11:34:02.978Z</updated>
     
@@ -186,14 +192,14 @@
     
     
     
-    <category term="Golang" scheme="https://huiskelvin.github.io/tags/Golang/"/>
+    <category term="Golang" scheme="http://hurk.top/tags/Golang/"/>
     
   </entry>
   
   <entry>
     <title>一个 todo list 的小 demo</title>
-    <link href="https://huiskelvin.github.io/2019/04/13/demo-todo-list/"/>
-    <id>https://huiskelvin.github.io/2019/04/13/demo-todo-list/</id>
+    <link href="http://hurk.top/2019/04/13/demo-todo-list/"/>
+    <id>http://hurk.top/2019/04/13/demo-todo-list/</id>
     <published>2019-04-13T15:14:20.000Z</published>
     <updated>2021-10-06T09:22:27.117Z</updated>
     
@@ -209,8 +215,8 @@
   
   <entry>
     <title>CSS - div的高度填满剩余空间</title>
-    <link href="https://huiskelvin.github.io/2019/04/04/div-fill-in-the-rest-zoom/"/>
-    <id>https://huiskelvin.github.io/2019/04/04/div-fill-in-the-rest-zoom/</id>
+    <link href="http://hurk.top/2019/04/04/div-fill-in-the-rest-zoom/"/>
+    <id>http://hurk.top/2019/04/04/div-fill-in-the-rest-zoom/</id>
     <published>2019-04-04T14:15:11.000Z</published>
     <updated>2021-10-07T02:18:01.293Z</updated>
     
@@ -222,16 +228,16 @@
     
     
     
-    <category term="CSS" scheme="https://huiskelvin.github.io/tags/CSS/"/>
+    <category term="CSS" scheme="http://hurk.top/tags/CSS/"/>
     
-    <category term="front-end" scheme="https://huiskelvin.github.io/tags/front-end/"/>
+    <category term="front-end" scheme="http://hurk.top/tags/front-end/"/>
     
   </entry>
   
   <entry>
     <title>Duplicate repetitive elements in array</title>
-    <link href="https://huiskelvin.github.io/2019/04/03/duplicate-repetitive-elements-in-array/"/>
-    <id>https://huiskelvin.github.io/2019/04/03/duplicate-repetitive-elements-in-array/</id>
+    <link href="http://hurk.top/2019/04/03/duplicate-repetitive-elements-in-array/"/>
+    <id>http://hurk.top/2019/04/03/duplicate-repetitive-elements-in-array/</id>
     <published>2019-04-03T14:36:13.000Z</published>
     <updated>2021-09-02T13:31:49.025Z</updated>
     
@@ -248,14 +254,14 @@
     
     
     
-    <category term="算法" scheme="https://huiskelvin.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="http://hurk.top/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>C++ —函数</title>
-    <link href="https://huiskelvin.github.io/2019/04/01/cplusplus-2-function/"/>
-    <id>https://huiskelvin.github.io/2019/04/01/cplusplus-2-function/</id>
+    <link href="http://hurk.top/2019/04/01/cplusplus-2-function/"/>
+    <id>http://hurk.top/2019/04/01/cplusplus-2-function/</id>
     <published>2019-04-01T07:30:25.000Z</published>
     <updated>2021-09-02T13:31:49.001Z</updated>
     
@@ -267,14 +273,14 @@
     
     
     
-    <category term="C++" scheme="https://huiskelvin.github.io/tags/C/"/>
+    <category term="C++" scheme="http://hurk.top/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>C++ —入门基础</title>
-    <link href="https://huiskelvin.github.io/2019/04/01/cplusplus-1-base-knowledge/"/>
-    <id>https://huiskelvin.github.io/2019/04/01/cplusplus-1-base-knowledge/</id>
+    <link href="http://hurk.top/2019/04/01/cplusplus-1-base-knowledge/"/>
+    <id>http://hurk.top/2019/04/01/cplusplus-1-base-knowledge/</id>
     <published>2019-04-01T07:14:05.000Z</published>
     <updated>2021-09-02T13:31:48.988Z</updated>
     
@@ -286,14 +292,14 @@
     
     
     
-    <category term="C++" scheme="https://huiskelvin.github.io/tags/C/"/>
+    <category term="C++" scheme="http://hurk.top/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>CSS-鼠标hover某元素，控制另一个元素显示</title>
-    <link href="https://huiskelvin.github.io/2019/03/30/frontend-hover-item-show-another-item/"/>
-    <id>https://huiskelvin.github.io/2019/03/30/frontend-hover-item-show-another-item/</id>
+    <link href="http://hurk.top/2019/03/30/frontend-hover-item-show-another-item/"/>
+    <id>http://hurk.top/2019/03/30/frontend-hover-item-show-another-item/</id>
     <published>2019-03-30T02:36:27.000Z</published>
     <updated>2021-09-22T11:44:28.517Z</updated>
     
@@ -305,14 +311,14 @@
     
     
     
-    <category term="CSS" scheme="https://huiskelvin.github.io/tags/CSS/"/>
+    <category term="CSS" scheme="http://hurk.top/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript-简介</title>
-    <link href="https://huiskelvin.github.io/2019/03/24/javascript-1-introduction/"/>
-    <id>https://huiskelvin.github.io/2019/03/24/javascript-1-introduction/</id>
+    <link href="http://hurk.top/2019/03/24/javascript-1-introduction/"/>
+    <id>http://hurk.top/2019/03/24/javascript-1-introduction/</id>
     <published>2019-03-24T11:50:37.000Z</published>
     <updated>2021-09-02T13:31:49.044Z</updated>
     
@@ -324,14 +330,14 @@
     
     
     
-    <category term="JavaScript" scheme="https://huiskelvin.github.io/tags/JavaScript/"/>
+    <category term="JavaScript" scheme="http://hurk.top/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>使用Vue开发项目中遇到的坑</title>
-    <link href="https://huiskelvin.github.io/2019/03/08/problems-in-using-Vue/"/>
-    <id>https://huiskelvin.github.io/2019/03/08/problems-in-using-Vue/</id>
+    <link href="http://hurk.top/2019/03/08/problems-in-using-Vue/"/>
+    <id>http://hurk.top/2019/03/08/problems-in-using-Vue/</id>
     <published>2019-03-08T00:06:09.000Z</published>
     <updated>2021-09-02T13:31:49.051Z</updated>
     
@@ -343,14 +349,14 @@
     
     
     
-    <category term="Vue" scheme="https://huiskelvin.github.io/tags/Vue/"/>
+    <category term="Vue" scheme="http://hurk.top/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>Apache —（一）在Win10上安装部署Apache Http Server</title>
-    <link href="https://huiskelvin.github.io/2019/02/03/Apache-1-installization/"/>
-    <id>https://huiskelvin.github.io/2019/02/03/Apache-1-installization/</id>
+    <link href="http://hurk.top/2019/02/03/Apache-1-installization/"/>
+    <id>http://hurk.top/2019/02/03/Apache-1-installization/</id>
     <published>2019-02-03T03:30:18.000Z</published>
     <updated>2021-09-02T13:31:48.966Z</updated>
     
@@ -362,16 +368,16 @@
     
     
     
-    <category term="服务器" scheme="https://huiskelvin.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="服务器" scheme="http://hurk.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-    <category term="Apache" scheme="https://huiskelvin.github.io/tags/Apache/"/>
+    <category term="Apache" scheme="http://hurk.top/tags/Apache/"/>
     
   </entry>
   
   <entry>
     <title>数据库—概述</title>
-    <link href="https://huiskelvin.github.io/2019/01/13/Database-Introduction/"/>
-    <id>https://huiskelvin.github.io/2019/01/13/Database-Introduction/</id>
+    <link href="http://hurk.top/2019/01/13/Database-Introduction/"/>
+    <id>http://hurk.top/2019/01/13/Database-Introduction/</id>
     <published>2019-01-13T11:35:04.000Z</published>
     <updated>2021-10-06T09:10:11.961Z</updated>
     
@@ -383,14 +389,14 @@
     
     
     
-    <category term="数据库" scheme="https://huiskelvin.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="http://hurk.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
   <entry>
     <title>《HTML5与CSS3基础教程》笔记—定义选择器</title>
-    <link href="https://huiskelvin.github.io/2019/01/12/HTML&amp;CSS-CSSSelector/"/>
-    <id>https://huiskelvin.github.io/2019/01/12/HTML&amp;CSS-CSSSelector/</id>
+    <link href="http://hurk.top/2019/01/12/HTML&amp;CSS-CSSSelector/"/>
+    <id>http://hurk.top/2019/01/12/HTML&amp;CSS-CSSSelector/</id>
     <published>2019-01-12T12:43:30.000Z</published>
     <updated>2021-09-02T13:31:48.981Z</updated>
     
@@ -402,7 +408,7 @@
     
     
     
-    <category term="CSS" scheme="https://huiskelvin.github.io/tags/CSS/"/>
+    <category term="CSS" scheme="http://hurk.top/tags/CSS/"/>
     
   </entry>
   
